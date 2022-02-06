@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js only</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      const rootElement = document.getElementById("root");
+      rootElement.setAttribute("id", "root");
+
+      const element = document.createElement("div");
+      //   console.log(element);
+      element.textContent = "Hello World";
+      element.className = "container";
+
+      rootElement.append(element);
+    </script>
+  </body>
+</html>
